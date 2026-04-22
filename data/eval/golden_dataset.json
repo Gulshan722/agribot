@@ -1,0 +1,122 @@
+[
+  {
+    "id": "eval_001",
+    "question": "how to manage drought stress in wheat crops",
+    "expected_answer": "To manage drought stress in wheat crops, farmers can implement conservation agriculture practices such as mulching and reduced tillage to retain soil moisture, while also utilizing drought-tolerant wheat varieties like 'Dryland' or 'AUS27811'. Additionally, supplemental irrigation can be applied at critical growth stages, such as booting and flowering, to mitigate yield losses. Proper crop monitoring and timely application of drought mitigation strategies can help minimize yield reductions and promote water use efficiency in wheat crops.",
+    "category": "water_management"
+  },
+  {
+    "id": "eval_002",
+    "question": "what fertilizer should I use for rice paddy",
+    "expected_answer": "For rice paddy, I recommend using a balanced fertilizer with a ratio of 15:15:15 (nitrogen:phosphorus:potassium) applied at a rate of 100-150 kg per hectare. Additionally, a split application of urea (46:0:0) at 50-75 kg per hectare can be applied at tillering and panicle formation stages to promote healthy growth and maximize yields. It's also essential to consider soil testing to determine the specific nutrient deficiencies and adjust the fertilizer application accordingly.",
+    "category": "fertilizer"
+  },
+  {
+    "id": "eval_003",
+    "question": "how to improve soil health for farming",
+    "expected_answer": "To improve soil health for farming, incorporate organic amendments such as compost, manure, or green manure into the soil, as these add essential nutrients, improve soil structure, and support beneficial microbial activity. Additionally, implement conservation tillage or no-till practices to reduce soil disturbance, erosion, and nutrient loss, while also promoting soil biota and root growth. Regularly rotating crops and using cover crops can also enhance soil health by breaking disease and pest cycles, and increasing soil organic matter.",
+    "category": "soil_management"
+  },
+  {
+    "id": "eval_004",
+    "question": "organic methods to control pests on vegetables",
+    "expected_answer": "To control pests on vegetables using organic methods, farmers can utilize techniques such as introducing beneficial insects like ladybugs and lacewings, which prey on common pests like aphids and whiteflies. Additionally, applying neem oil or insecticidal soap can effectively manage pest populations, while also being safe for human consumption and the environment. Crop rotation, physical barriers, and row covers can also be employed to prevent pest infestations and reduce the need for pesticides.",
+    "category": "pest_management"
+  },
+  {
+    "id": "eval_005",
+    "question": "when to apply nitrogen fertilizer to crops",
+    "expected_answer": "Nitrogen fertilizer is typically applied to crops at specific growth stages, such as at planting or during the vegetative growth phase, when the crop is 6-12 inches tall. For crops like corn and wheat, a split application of nitrogen is often recommended, with 30-50% applied at planting and the remaining 50-70% applied as a side-dress when the crop is 12-24 inches tall. This timing allows for optimal uptake and utilization of nitrogen by the crop, promoting healthy growth and maximizing yields.",
+    "category": "fertilizer"
+  },
+  {
+    "id": "eval_006",
+    "question": "how to reduce soil erosion on farmland",
+    "expected_answer": "To reduce soil erosion on farmland, farmers can implement conservation tillage practices, such as no-till or reduced-till farming, which help to maintain soil cover and reduce soil disturbance. Additionally, planting cover crops like winter rye or oats can help to hold the soil in place and reduce erosion, especially during periods of heavy rainfall or runoff. By incorporating these practices, farmers can reduce soil erosion by up to 50% and improve overall soil health.",
+    "category": "soil_management"
+  },
+  {
+    "id": "eval_007",
+    "question": "what are climate smart agriculture practices",
+    "expected_answer": "Climate-smart agriculture (CSA) practices include the use of conservation agriculture, such as no-till or reduced-till farming, and agroforestry, which involves integrating trees into agricultural landscapes to promote soil health and biodiversity. Additionally, CSA practices also involve the use of climate-resilient crop and animal varieties, as well as precision irrigation and water harvesting techniques to optimize water use efficiency. These practices help farmers adapt to climate change by reducing greenhouse gas emissions, improving soil carbon sequestration, and enhancing agricultural productivity and resilience.",
+    "category": "climate_smart"
+  },
+  {
+    "id": "eval_008",
+    "question": "how to manage waterlogging in fields",
+    "expected_answer": "To manage waterlogging in fields, farmers can implement drainage systems such as installing tile drains or mole drains, which help to remove excess water from the soil. Additionally, practices like raised bed farming and contour farming can also help to reduce waterlogging by allowing water to flow away from the crop roots. Regular soil aeration and incorporation of organic matter like compost or manure can also improve soil structure and permeability, reducing the likelihood of waterlogging.",
+    "category": "water_management"
+  },
+  {
+    "id": "eval_009",
+    "question": "best practices for integrated pest management",
+    "expected_answer": "For effective integrated pest management (IPM), farmers should adopt a holistic approach that combines techniques such as crop rotation, biological control, and cultural controls, like pruning and sanitation, to minimize pest populations. Additionally, monitoring pest populations through regular scouting and using economic thresholds can help determine the need for targeted chemical controls, reducing the risk of pesticide resistance and environmental harm. By incorporating these strategies, farmers can optimize IPM outcomes, reducing crop losses and promoting ecosystem health.",
+    "category": "pest_management"
+  },
+  {
+    "id": "eval_010",
+    "question": "how to improve crop yield in dry conditions",
+    "expected_answer": "To improve crop yield in dry conditions, farmers can implement conservation agriculture practices such as mulching and reduced tillage, which help retain soil moisture and reduce evaporation. Additionally, using drought-tolerant crop varieties and incorporating cover crops that have deep root systems can also enhance soil water retention and reduce soil temperature. Furthermore, precision irrigation techniques, such as drip irrigation, can deliver water directly to the roots of the plants, minimizing water loss and optimizing water use efficiency.",
+    "category": "general"
+  },
+  {
+    "id": "eval_011",
+    "question": "what is urea deep placement technique",
+    "expected_answer": "Urea deep placement (UDP) is a farming technique where urea fertilizer is placed 7-10 cm below the soil surface, typically in a band or pocket, to reduce nitrogen losses and increase crop uptake. This method involves using a specialized tool or implement to create a small hole or trench, into which the urea is placed, usually at the time of planting or shortly after. By placing urea deeper in the soil, farmers can minimize ammonia volatilization and leaching, resulting in more efficient nitrogen use and higher crop yields.",
+    "category": "fertilizer"
+  },
+  {
+    "id": "eval_012",
+    "question": "how to build soil organic matter",
+    "expected_answer": "To build soil organic matter, incorporate a combination of compost, manure, and cover crops into your soil management plan, aiming to add 2-4 tons of organic amendments per acre per year. Additionally, implement conservation tillage or no-till practices to minimize soil disturbance and preserve existing organic matter. By also using crop rotations that include legumes and other high-residue crops, you can further enhance soil organic matter accumulation and overall soil health.",
+    "category": "soil_management"
+  },
+  {
+    "id": "eval_013",
+    "question": "signs of nutrient deficiency in crops",
+    "expected_answer": "Signs of nutrient deficiency in crops can include yellowing or chlorosis of leaves, stunted growth, and reduced yields, with specific deficiencies such as nitrogen deficiency causing pale green or yellow leaves, while iron deficiency can cause interveinal chlorosis. Other visual indicators include purpling or reddening of leaves in the case of phosphorus deficiency, and scorched or burnt tips in the case of potassium deficiency. Regular monitoring of crop health and soil testing can help identify nutrient deficiencies early, allowing for targeted fertilization and correction.",
+    "category": "fertilizer"
+  },
+  {
+    "id": "eval_014",
+    "question": "how to manage crop residues after harvest",
+    "expected_answer": "To manage crop residues after harvest, farmers can adopt techniques such as mulching, where residues are left on the soil surface to retain moisture and suppress weeds, or incorporate them into the soil through tillage to improve soil organic matter and structure. Alternatively, crop residues can be baled and removed from the field for use as animal feed or compost, reducing fire hazards and preparing the soil for the next crop. Additionally, conservation tillage methods, such as reduced or no-till farming, can also be used to effectively manage crop residues while minimizing soil disturbance.",
+    "category": "general"
+  },
+  {
+    "id": "eval_015",
+    "question": "what is conservation agriculture",
+    "expected_answer": "Conservation agriculture is a farming approach that aims to minimize soil disturbance, preserve soil organic matter, and promote biodiversity through the use of techniques such as no-till or reduced-till farming, permanent soil cover with crop residues or cover crops, and crop rotations. This approach helps to reduce soil erosion, improve soil health, and increase water retention, ultimately leading to more sustainable and resilient agricultural systems. By adopting conservation agriculture practices, farmers can reduce their environmental footprint while maintaining or improving crop yields and profitability.",
+    "category": "general"
+  },
+  {
+    "id": "eval_016",
+    "question": "how to reduce greenhouse gas emissions from farming",
+    "expected_answer": "To reduce greenhouse gas emissions from farming, implementing conservation agriculture practices such as no-till or reduced-till farming, cover cropping, and crop rotation can help sequester carbon in soils and reduce synthetic fertilizer use. Additionally, using nitrogen-efficient crop varieties and optimizing fertilizer application rates can minimize nitrous oxide emissions, a potent greenhouse gas. By adopting these strategies, farmers can decrease their carbon footprint while maintaining or even increasing crop yields.",
+    "category": "climate_smart"
+  },
+  {
+    "id": "eval_017",
+    "question": "best irrigation methods for small farmers",
+    "expected_answer": "For small farmers, drip irrigation is a highly effective method as it delivers water directly to the roots of plants, reducing evaporation and runoff, and increasing crop yields by up to 20%. Another suitable option is sprinkler irrigation, which is easy to install and maintain, and can be used for a variety of crops, including row crops and orchards. Additionally, mulch-based irrigation systems can also be used, which help retain soil moisture and suppress weeds, reducing the need for frequent watering.",
+    "category": "water_management"
+  },
+  {
+    "id": "eval_018",
+    "question": "how to identify and control fungal diseases in crops",
+    "expected_answer": "To identify fungal diseases in crops, look for characteristic symptoms such as powdery patches, yellowing leaves, or blackened stems, and inspect the affected areas for signs of fungal growth like white, cottony mycelium or dark, spherical spores. Control measures include removing and disposing of infected plant material, improving air circulation and reducing moisture levels through irrigation management and pruning, and applying targeted fungicides like copper-based or azole-based products. Regular crop monitoring and integrated pest management strategies can also help prevent the spread of fungal diseases, such as rotating crops, using resistant varieties, and practicing good sanitation.",
+    "category": "pest_management"
+  },
+  {
+    "id": "eval_019",
+    "question": "what cover crops improve soil fertility",
+    "expected_answer": "Legume cover crops such as hairy vetch, clover, and winter peas are excellent for improving soil fertility as they fix atmospheric nitrogen, reducing the need for synthetic fertilizers. Additionally, cover crops like rye and oats help to improve soil structure and increase organic matter through their extensive root systems. These crops can also attract beneficial insects and suppress weeds, further enhancing soil health and fertility.",
+    "category": "soil_management"
+  },
+  {
+    "id": "eval_020",
+    "question": "how does crop rotation help soil health",
+    "expected_answer": "Crop rotation helps soil health by breaking disease and pest cycles, improving soil structure, and increasing nutrient availability through the addition of organic matter and nitrogen-fixing legumes. By rotating crops, farmers can also reduce soil erosion, increase microbial activity, and promote a more diverse and resilient soil ecosystem. Additionally, rotating crops like cereals with legumes can help replenish soil nitrogen, reducing the need for synthetic fertilizers and promoting more sustainable farming practices.",
+    "category": "soil_management"
+  }
+]

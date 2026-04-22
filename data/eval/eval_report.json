@@ -1,0 +1,240 @@
+{
+  "timestamp": "2026-04-22T17:33:59.887718",
+  "total_questions": 20,
+  "passed": 14,
+  "failed": 6,
+  "pass_rate": 0.7,
+  "averages": {
+    "context_recall": 0.492,
+    "answer_relevancy": 1.0,
+    "mrr_at_5": 0.87
+  },
+  "thresholds": {
+    "context_recall": 0.45,
+    "answer_relevancy": 0.7,
+    "mrr_at_5": 0.35
+  },
+  "overall_pass": true,
+  "results": [
+    {
+      "id": "eval_001",
+      "question": "how to manage drought stress in wheat crops",
+      "category": "water_management",
+      "scores": {
+        "context_recall": 0.618,
+        "answer_relevancy": 1.0,
+        "mrr_at_5": 1.0
+      },
+      "passed": true
+    },
+    {
+      "id": "eval_002",
+      "question": "what fertilizer should I use for rice paddy",
+      "category": "fertilizer",
+      "scores": {
+        "context_recall": 0.349,
+        "answer_relevancy": 1.0,
+        "mrr_at_5": 1.0
+      },
+      "passed": false
+    },
+    {
+      "id": "eval_003",
+      "question": "how to improve soil health for farming",
+      "category": "soil_management",
+      "scores": {
+        "context_recall": 0.517,
+        "answer_relevancy": 1.0,
+        "mrr_at_5": 1.0
+      },
+      "passed": true
+    },
+    {
+      "id": "eval_004",
+      "question": "organic methods to control pests on vegetables",
+      "category": "pest_management",
+      "scores": {
+        "context_recall": 0.44,
+        "answer_relevancy": 1.0,
+        "mrr_at_5": 1.0
+      },
+      "passed": false
+    },
+    {
+      "id": "eval_005",
+      "question": "when to apply nitrogen fertilizer to crops",
+      "category": "fertilizer",
+      "scores": {
+        "context_recall": 0.5,
+        "answer_relevancy": 1.0,
+        "mrr_at_5": 1.0
+      },
+      "passed": true
+    },
+    {
+      "id": "eval_006",
+      "question": "how to reduce soil erosion on farmland",
+      "category": "soil_management",
+      "scores": {
+        "context_recall": 0.54,
+        "answer_relevancy": 1.0,
+        "mrr_at_5": 1.0
+      },
+      "passed": true
+    },
+    {
+      "id": "eval_007",
+      "question": "what are climate smart agriculture practices",
+      "category": "climate_smart",
+      "scores": {
+        "context_recall": 0.607,
+        "answer_relevancy": 1.0,
+        "mrr_at_5": 1.0
+      },
+      "passed": true
+    },
+    {
+      "id": "eval_008",
+      "question": "how to manage waterlogging in fields",
+      "category": "water_management",
+      "scores": {
+        "context_recall": 0.451,
+        "answer_relevancy": 1.0,
+        "mrr_at_5": 1.0
+      },
+      "passed": true
+    },
+    {
+      "id": "eval_009",
+      "question": "best practices for integrated pest management",
+      "category": "pest_management",
+      "scores": {
+        "context_recall": 0.456,
+        "answer_relevancy": 1.0,
+        "mrr_at_5": 1.0
+      },
+      "passed": true
+    },
+    {
+      "id": "eval_010",
+      "question": "how to improve crop yield in dry conditions",
+      "category": "general",
+      "scores": {
+        "context_recall": 0.393,
+        "answer_relevancy": 1.0,
+        "mrr_at_5": 0.2
+      },
+      "passed": false
+    },
+    {
+      "id": "eval_011",
+      "question": "what is urea deep placement technique",
+      "category": "fertilizer",
+      "scores": {
+        "context_recall": 0.569,
+        "answer_relevancy": 1.0,
+        "mrr_at_5": 1.0
+      },
+      "passed": true
+    },
+    {
+      "id": "eval_012",
+      "question": "how to build soil organic matter",
+      "category": "soil_management",
+      "scores": {
+        "context_recall": 0.569,
+        "answer_relevancy": 1.0,
+        "mrr_at_5": 1.0
+      },
+      "passed": true
+    },
+    {
+      "id": "eval_013",
+      "question": "signs of nutrient deficiency in crops",
+      "category": "fertilizer",
+      "scores": {
+        "context_recall": 0.559,
+        "answer_relevancy": 1.0,
+        "mrr_at_5": 1.0
+      },
+      "passed": true
+    },
+    {
+      "id": "eval_014",
+      "question": "how to manage crop residues after harvest",
+      "category": "general",
+      "scores": {
+        "context_recall": 0.508,
+        "answer_relevancy": 1.0,
+        "mrr_at_5": 1.0
+      },
+      "passed": true
+    },
+    {
+      "id": "eval_015",
+      "question": "what is conservation agriculture",
+      "category": "general",
+      "scores": {
+        "context_recall": 0.613,
+        "answer_relevancy": 1.0,
+        "mrr_at_5": 1.0
+      },
+      "passed": true
+    },
+    {
+      "id": "eval_016",
+      "question": "how to reduce greenhouse gas emissions from farming",
+      "category": "climate_smart",
+      "scores": {
+        "context_recall": 0.396,
+        "answer_relevancy": 1.0,
+        "mrr_at_5": 1.0
+      },
+      "passed": false
+    },
+    {
+      "id": "eval_017",
+      "question": "best irrigation methods for small farmers",
+      "category": "water_management",
+      "scores": {
+        "context_recall": 0.38,
+        "answer_relevancy": 1.0,
+        "mrr_at_5": 0.2
+      },
+      "passed": false
+    },
+    {
+      "id": "eval_018",
+      "question": "how to identify and control fungal diseases in crops",
+      "category": "pest_management",
+      "scores": {
+        "context_recall": 0.347,
+        "answer_relevancy": 1.0,
+        "mrr_at_5": 0.0
+      },
+      "passed": false
+    },
+    {
+      "id": "eval_019",
+      "question": "what cover crops improve soil fertility",
+      "category": "soil_management",
+      "scores": {
+        "context_recall": 0.458,
+        "answer_relevancy": 1.0,
+        "mrr_at_5": 1.0
+      },
+      "passed": true
+    },
+    {
+      "id": "eval_020",
+      "question": "how does crop rotation help soil health",
+      "category": "soil_management",
+      "scores": {
+        "context_recall": 0.564,
+        "answer_relevancy": 1.0,
+        "mrr_at_5": 1.0
+      },
+      "passed": true
+    }
+  ]
+}
