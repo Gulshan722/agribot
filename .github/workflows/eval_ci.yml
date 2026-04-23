@@ -25,42 +25,46 @@ jobs:
       - name: Create data directories
         run: mkdir -p data/raw data/processed data/eval
 
-      - name: Download agricultural PDFs
-        run: |
-          curl -L "https://www.fao.org/3/i3325e/i3325e.pdf" \
-            --user-agent "Mozilla/5.0" -o data/raw/fao_crop_guide.pdf
-          curl -L "https://www.fao.org/3/i3084e/i3084e.pdf" \
-            --user-agent "Mozilla/5.0" -o data/raw/fao_pest_management.pdf
-          curl -L "https://www.fao.org/3/a0443e/a0443e.pdf" \
-            --user-agent "Mozilla/5.0" -o data/raw/fao_soil_fertility.pdf
-
-      - name: Verify PDFs downloaded
-        run: |
-          for f in data/raw/*.pdf; do
-            header=$(head -c 4 "$f" 2>/dev/null)
-            size=$(du -sh "$f" | cut -f1)
-            if [[ "$header" == "%PDF" ]]; then
-              echo "✅ $(basename $f) — $size"
-            else
-              echo "❌ BROKEN: $(basename $f) — skipping"
-              rm "$f"
-            fi
-          done
-
       - name: Start Qdrant
         run: |
           docker run -d -p 6333:6333 \
-            -v $(pwd)/qdrant_storage:/qdrant/storage \
             --name agribot-qdrant qdrant/qdrant
           sleep 8
 
-      - name: Run ingestion pipeline
-        run: python3 -m src.ingestion.pipeline
+      - name: Restore processed chunks from repo
+        run: |
+          echo "Using pre-processed chunks from repository..."
+          ls -lh data/processed/ || echo "No processed data found"
+
+      - name: Rebuild vector store and BM25 from committed chunks
+        run: |
+          python3 -c "
+          import json
+          from src.ingestion.embedder import embed_texts
+          from src.retrieval.vector_store import create_collection, upsert_chunks
+          from src.retrieval.bm25_store import build_bm25_index
+
+          print('Loading committed chunks...')
+          with open('data/processed/chunks.json') as f:
+              chunks = json.load(f)
+          print(f'Loaded {len(chunks)} chunks')
+
+          print('Embedding chunks...')
+          texts = [c['content'] for c in chunks]
+          embeddings = embed_texts(texts, batch_size=64)
+
+          print('Storing in Qdrant...')
+          create_collection(recreate=True)
+          upsert_chunks(chunks, embeddings)
+
+          print('Building BM25...')
+          build_bm25_index(chunks)
+          print('Done!')
+          "
         env:
-          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           QDRANT_URL: http://localhost:6333
 
-      - name: Run evaluation
+      - name: Run evaluation against golden dataset
         run: python3 -m eval.run_eval --threshold 0.45
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
