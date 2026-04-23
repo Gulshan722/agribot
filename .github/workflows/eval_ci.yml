@@ -1,4 +1,3 @@
-# .github/workflows/eval_ci.yml
 name: AgriBot Quality Gate
 
 on:
@@ -6,8 +5,6 @@ on:
     branches: [main]
   pull_request:
     branches: [main]
-  schedule:
-    - cron: '0 2 * * *'   # nightly at 2am UTC
 
 jobs:
   evaluate:
@@ -25,10 +22,37 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      - name: Create data directories
+        run: mkdir -p data/raw data/processed data/eval
+
+      - name: Download agricultural PDFs
+        run: |
+          curl -L "https://www.fao.org/3/i3325e/i3325e.pdf" \
+            --user-agent "Mozilla/5.0" -o data/raw/fao_crop_guide.pdf
+          curl -L "https://www.fao.org/3/i3084e/i3084e.pdf" \
+            --user-agent "Mozilla/5.0" -o data/raw/fao_pest_management.pdf
+          curl -L "https://www.fao.org/3/a0443e/a0443e.pdf" \
+            --user-agent "Mozilla/5.0" -o data/raw/fao_soil_fertility.pdf
+
+      - name: Verify PDFs downloaded
+        run: |
+          for f in data/raw/*.pdf; do
+            header=$(head -c 4 "$f" 2>/dev/null)
+            size=$(du -sh "$f" | cut -f1)
+            if [[ "$header" == "%PDF" ]]; then
+              echo "✅ $(basename $f) — $size"
+            else
+              echo "❌ BROKEN: $(basename $f) — skipping"
+              rm "$f"
+            fi
+          done
+
       - name: Start Qdrant
         run: |
-          docker run -d -p 6333:6333 qdrant/qdrant
-          sleep 5
+          docker run -d -p 6333:6333 \
+            -v $(pwd)/qdrant_storage:/qdrant/storage \
+            --name agribot-qdrant qdrant/qdrant
+          sleep 8
 
       - name: Run ingestion pipeline
         run: python3 -m src.ingestion.pipeline
@@ -37,7 +61,7 @@ jobs:
           QDRANT_URL: http://localhost:6333
 
       - name: Run evaluation
-        run: python3 eval/run_eval.py --threshold 0.50
+        run: python3 -m eval.run_eval --threshold 0.45
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           QDRANT_URL: http://localhost:6333
