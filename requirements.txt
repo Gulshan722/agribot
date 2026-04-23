@@ -19,6 +19,7 @@ fastapi==0.136.0
 filelock==3.28.0
 frozenlist==1.8.0
 fsspec==2026.2.0
+groq==1.2.0
 grpcio==1.80.0
 h11==0.16.0
 h2==4.3.0
