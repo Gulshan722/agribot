@@ -5,3 +5,4 @@ __pycache__/
 .DS_Store
 data/raw/
 qdrant_storage/
+data/eval/feedback.jsonl
